@@ -1,0 +1,256 @@
+$primary: purple;
+$secondary: #777;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+
+body{
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.indexContainer {
+  width: 100vw
+}
+
+.floaty {
+  position: fixed;
+  color: white;
+  text-decoration: none;
+  top: auto;
+  left: auto;
+  bottom: 3rem;
+  right: 3rem;
+
+  & .arrow{
+    filter: invert(100%);
+    object-fit: cover;
+    background-color: rgba(invert($primary, 100%), 1);
+    border-radius: 100%;
+    box-shadow: 0 0.5rem 1rem rgba($color: white, $alpha: 0.4);
+  }
+
+  &:hover .arrow {
+    background-color: lighten($color: invert($primary, 100%), $amount: 3%);
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 992px) {
+    //mobile floating button at the bottom
+    top: 3rem;
+    left: 3rem;
+    bottom: auto;
+    right: auto;
+  }
+}
+
+.shadowBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px none;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba($primary, 0.4);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.mainContainer{
+    margin: 1rem 1rem;
+    @media screen and (min-width: 768px) {
+        margin-top: 5rem;
+    }
+    & .impressum {
+      margin-top: 1rem;
+      max-width: 40rem;
+      @media screen and (min-width: 768px) {
+        margin-top: 5rem;
+      }
+      @media screen and (min-width: 1100px) {
+        max-width: 50rem;
+      }
+  
+      & .impressumBot {
+        display: inline;
+      }
+    }
+    &>.mainDiv {
+        min-height: 25rem;
+        //background-color: #fefefe;
+        &>.mainImg {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            //border-radius: 1.5rem;
+        }
+        &>.mainName {
+            font-size: 2.6rem;
+            font-weight: bold;
+            color: rgba($primary, 1);
+        }
+        &>.mainTitle {
+            font-size: 1.2rem;
+            color: #666;
+        }
+    }
+    &>.frontDiv{
+      align-items: center;
+      max-width: 30rem;
+    }
+}
+
+.linkTree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    &>.linkTreeItem {
+        background-color: rgba($primary, 1);
+        border: solid 2px darken($primary, 7%);
+        border-top-width: 1px;
+        border-bottom-width: 4px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        margin: .5rem;
+        color: white;
+        //transition: all .1s ease-in-out;
+        & .linkTreeIcon {
+            width: 2.5rem;
+            height: 2.5rem;
+            object-fit: contain;
+            margin: .5rem;
+            flex: 1;
+        }
+        & .linkTreeLinkParent {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            flex: 6;
+        }
+        & .linkTreeLink {
+            font-size: 1.2rem;
+            text-decoration: none;
+            width: 100%;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &>.linkTreeItem:hover {
+        background-color: darken($color: $primary, $amount: 3%);
+        border-bottom-width: 1px;
+        border-top-width: 4px;
+        text-decoration: none;
+    }
+}
+
+.backgroundDiv {
+    //margin-top: -10rem;
+    height: 20vh;
+    @media screen and (min-width: 576px) {
+        height: 30vh;
+    }
+    @media screen and (min-width: 768px) {
+        height: 40vh;
+    }
+    @media screen and (min-width: 992px) {
+        height: 50vh;
+    }
+    & .triangle {
+        width: 100%;
+        height: 100%;
+        fill: $primary
+    }
+    & .otherColor {
+        fill: darken($primary, 10%);
+    }
+    & .otherColor2 {
+        fill: darken($primary, 5%);
+    }
+}
+
+.fullHeight {
+    height: 100vh;
+    min-height: 750px;
+}
+
+.footer {
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  padding: 0 1rem;
+  font-weight: bold;
+  & .footerIconParent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      margin: .7rem 0;
+      max-height: 20rem;
+      @media screen and (min-width: 768px) {
+          margin: 2rem 0;
+      }
+      & .footerIcon{
+        object-fit: contain;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+          height: 300px;
+          width: 300px;
+        }
+      }
+  }
+
+  & .footerLinks{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      & .footerLinksParent{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          &>span{
+              margin-top: .7rem;
+              margin-bottom: .3rem;
+              align-self: center;
+          }
+          &>a{
+              text-decoration: none;
+              color: white;
+              border: solid 2px darken($primary, 5%);
+              border-bottom-width: 4px;
+              border-top-width: 1px;
+              border-radius: 7px;
+              background-color: darken($primary, 10%);
+              padding: .4rem 1.5rem;
+              margin: .2rem auto;
+              margin-left: 0;
+              width: 100%;
+              text-align: center;
+              &:hover{
+                  text-decoration: none;
+                  background-color: darken($primary, 15%);
+                  border-bottom-width: 1px;
+                  border-top-width: 4px;
+              }
+              &>svg{
+                  scale: 0.8;
+              }
+          }
+      }
+  }
+}
