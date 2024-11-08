@@ -1,0 +1,15 @@
+#- id: photoshape
+#  title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
+#  venue: SIGGRAPH Asia, 2018
+#  description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
+#  project_page: "https://photoshape.github.io"
+#  github: keunhong/photoshape
+#  arxiv: 1809.09761
+#  image: photoshape.jpg
+#  authors:
+#    - keunhong
+#    - krematas
+#    - ali
+#    - smseitz
+#  awards:
+#    - "Journal Cover"

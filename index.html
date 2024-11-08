@@ -1,133 +1,203 @@
-<!doctype html>
-<html lang="en" data-n-head="%7B%22lang%22:%7B%221%22:%22en%22%7D%7D">
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-  <title>Niclas Rosteck</title>
-  <meta data-n-head="1" charset="utf-8">
-  <meta data-n-head="1" name="viewport" content="width=device-width,initial-scale=1">
-  <meta data-n-head="1" data-hid="description" name="description" content="">
-  <meta data-n-head="1" name="format-detection" content="telephone=no">
-  <link data-n-head="1" rel="icon" type="image/x-icon" href="/logo.png">
-  <link rel="stylesheet" href="main.css">
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>{{ site.name }}</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script src="{{ '/js/index.js' | relative_url }}"></script>
 </head>
+
 <body>
-  <div class="indexContainer">
-    <div class="mainContainer">
-      <div class="mainDiv frontDiv shadowBox">
-        <span class="mainName">
-          Niclas Rosteck
-        </span> 
-        <span class="mainTitle">
-          Software Developer
-        </span>
-        <div class="linkTree">
-          <a href="https://twitter.com/staddle_" class="linkTreeItem">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512" alt="link-icon" class="linkTreeIcon svg-inline--fa fa-twitter fa-w-16">
-              <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://twitter.com/staddle_" class="linkTreeLink">
-                Twitter
-              </span>
-            </span>
-          </a>
-          <a href="https://github.com/staddle" class="linkTreeItem">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" 
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" alt="link-icon"
-              class="linkTreeIcon svg-inline--fa fa-github fa-w-16">
-              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://github.com/staddle" class="linkTreeLink">
-                Github
-              </span>
-            </span>
-          </a>
-          <a href="https://www.linkedin.com/in/niclas-rosteck-91717816b/" class="linkTreeItem">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512" alt="link-icon" class="linkTreeIcon svg-inline--fa fa-linkedin fa-w-14">
-              <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://www.linkedin.com/in/niclas-rosteck-91717816b/" class="linkTreeLink">
-                LinkedIn
-              </span>
-            </span>
-          </a>
-          <a href="https://soundcloud.com/moonlvnd" class="linkTreeItem"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="soundcloud"
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" alt="link-icon"
-              class="linkTreeIcon svg-inline--fa fa-soundcloud fa-w-20">
-              <path fill="currentColor" d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://soundcloud.com/moonlvnd" class="linkTreeLink">
-                SoundCloud
-              </span>
-            </span>
-          </a>
-          <a href="https://www.twitch.tv/staddle_" class="linkTreeItem">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitch"
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" alt="link-icon"
-              class="linkTreeIcon svg-inline--fa fa-twitch fa-w-16">
-              <path fill="currentColor" d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://www.twitch.tv/staddle_" class="linkTreeLink">
-                Twitch
-              </span>
-            </span>
-          </a>
-          <a href="https://www.instagram.com/staddle_/" class="linkTreeItem">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="link-icon"
-              class="linkTreeIcon svg-inline--fa fa-instagram fa-w-14">
-              <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class="">
-              </path>
-            </svg> 
-            <span class="linkTreeLinkParent">
-              <span href="https://www.instagram.com/staddle_/" class="linkTreeLink">
-                Instagram
-              </span>
-            </span>
-          </a>
+
+  <section class="hero">
+    <div class="hero-body container is-max-desktop">
+      <div class="columns is-vcentered">
+
+        <div class="column is-4">
+          <div class="portrait">
+            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
+          </div>
+        </div>
+
+        <div class="column">
+          <h1 class="title">
+            <b>Hello, I'm {{ site.name }}</b>
+          </h1>
+          <div class="content has-text-justified">
+            {{ site.description | markdownify }}
+            <div class="buttons">
+              <a class="external-link button is-light" href="cv.html">
+                <span class="icon"><i class="fas fa-file"></i></span>
+                <span>CV</span>
+              </a>
+
+              <a class="external-link button is-light"
+                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
+              </a>
+
+              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Github</span>
+              </a>
+
+              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-    <div viewbox="0 0 100 100" class="backgroundDiv">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" class="triangle">
-        <path fill-opacity="1" transform="translate(0 -100)" d="M0,128L80,106.7C160,85,320,43,480,58.7C640,75,800,149,960,197.3C1120,245,1280,267,1360,277.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" class="otherColor"></path> 
-        <path fill-opacity="1" transform="translate(0 -50)" d="M0,160L80,165.3C160,171,320,181,480,165.3C640,149,800,107,960,106.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" class="otherColor2"></path> 
-        <path fill-opacity="1" transform="translate(0 150)" d="M0,64L80,69.3C160,75,320,85,480,85.3C640,85,800,75,960,64C1120,53,1280,43,1360,37.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-      </svg>
-    </div> 
-    <div class="footer">
-      <a href="https://bnry.de/" class="footerIconParent">
-        <img src="/assets/bnryicon.webp" alt="brand-icon" class="footerIcon" width="250px" height="250px">
-      </a> 
-      <div class="footerLinks">
-        <div class="footerLinksParent">
-          <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
-            Home
-          </a> 
-          <a href="/imprint" class="">
-            Imprint
-          </a> 
-          <span>My other pages</span> 
-          <a href="https://bnry.de/">
-            bnry.de
-          </a> 
-          <a href="https://cybershit.de/">
-            cybershit.de
-          </a>
-        </div>
-      </div>
+  </section>
+
+  <!-- News. -->
+  <div class="hr">
+    <div class="container">
+      <hr>
     </div>
   </div>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!--<h2 class="title is-3">News</h2>
+      <div class="content">
+        <ul>
+          {% for news in site.data.news %}
+          <li>
+            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>-->
+
+      <h2 class="title is-3">Publications</h2>
+
+      {% for publication in site.data.publications %}
+      <div class="publication-block columns">
+
+        <div class="column is-2">
+          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
+            {% if publication.image_mouseover contains "mp4" %}
+            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
+              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            {% endif %}
+            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
+            <div class="publication-authors">
+              {% for author_id in publication.authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% if author.is_me %}
+                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
+                endif %}
+                {% else %}
+                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
+                  }}</a>{% if forloop.last == false %},{% endif %}
+                {% endif %}
+              </span>
+              {% endfor %}
+            </div>
+            <div class="publication-venue">
+              <span>{{ publication.venue }}</span>
+              {% for award in publication.awards %}
+                <span class="publication-venue-emph">{{ award }}<span>
+              {% endfor %}
+            </div>
+            <p class="publication-description">{{ publication.description }}</p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons field has-addons">
+              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+              {% if publication.github %}
+              <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
+                <span class="icon"><i class="fa fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+              {% endif %}
+            </div>
+            <!--/ Publication Links. -->
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content footer-links has-text-centered">
+        <a href="mailto:{{ site.email }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/{{ site.github_username }}">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
