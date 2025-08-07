@@ -27,10 +27,10 @@ description: >-
 
   I received my Diploma in Computer Science at [Technische Universität Dresden](https://tu-dresden.de/) in 2024 after defending my diploma thesis on "Utilizing Large Language Models for Conversational Agent-based Initial Patient Assessment".
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nrosteck.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://staddle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: staddle_
 github_username: staddle
-#google_scholar: HVZb-5oAAAAJ
+google_scholar: s8xXYRkAAAAJ
 #google_analytics: G-MFWSBLRKG0
 
 # Build settings

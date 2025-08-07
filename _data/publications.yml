@@ -1,15 +1,14 @@
-#- id: photoshape
-#  title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
-#  venue: SIGGRAPH Asia, 2018
-#  description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
-#  project_page: "https://photoshape.github.io"
-#  github: keunhong/photoshape
-#  arxiv: 1809.09761
-#  image: photoshape.jpg
-#  authors:
-#    - keunhong
-#    - krematas
-#    - ali
-#    - smseitz
+- id: ipa
+  title: "Bridging the Treatment Gap: A Novel LLM-Driven System for Scalable Initial Patient Assessments in Mental Healthcare"
+  venue: CHI Yokohama, 2025
+  description: "To aid the widening treatment gap in psychotherapy, we designed, developed and evaluated a conversational agent-driven system to perform initial patient assessments remotely and autonomously."
+  project_page: "https://doi.org/10.1145/3706599.3720043"
+  #github: keunhong/photoshape
+  #arxiv: 1809.09761
+  image: OverviewDiagram.png
+  authors:
+    - rosteck
+    - striegl
+    - loitsch
 #  awards:
 #    - "Journal Cover"

@@ -1,5 +1,12 @@
 rosteck:
   first_name: Niclas
   last_name: Rosteck
-  website: https://nrosteck.me
+  website: https://staddle.github.io
   is_me: true
+striegl:
+  first_name: Julian Lars
+  last_name: Striegl
+  is_me: false
+loitsch:
+  first_name: Claudia
+  last_name: Loitsch
